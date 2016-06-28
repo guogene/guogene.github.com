@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>鼠标悬停</title>
+  </head>
+  <style>
+body{
+  background: #5a4f4b;
+}
+*{
+  margin: 0px;
+  padding: 0px;
+}
+ul{
+  margin: :0px;
+  padding: 0px;
+}
+.logo{
+  width:200px;
+  height:70px;
+  margin:50px auto;
+}
+.hover{
+  width:900px;
+  height: 300px;
+  background-color: pink;
+  margin:50px auto;
+
+}
+.hover ul .content{
+  list-style: none;
+  width: 160px;
+  height: 300px;
+  background-color: #fff;
+  float: left;
+  margin-left: 10px;
+  padding: 0px 20px;
+  overflow: hidden;
+  transition: all 500ms linear;
+
+}
+.content .c_img{
+  text-align: center;
+  margin-top: 30px;
+    transition: all 500ms linear;
+}
+  .content .c_img img{
+    width: 120px;
+    height: 90px;
+
+  }
+  .content .text .text_h1{
+    height:70px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 35px;
+    color: #999;
+    margin-top: 30px;
+      transition: all 2000ms linear;
+  }
+  .content .text .text_p{
+    width: 100%;
+    margin-top: 50px;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    bottom: -90px;
+  }
+  .hover ul .content:hover{
+     transform: scale(1.2,1.2);
+     background-color: #170b09;
+     z-index: 3;
+  }
+  .hover ul .content:hover .c_img{
+    transform: scale(1.2,1.2);
+  }
+  .hover ul .content:hover .text_h1{
+    transform: scale(1.2,1.2);
+    color: #fff;
+  }
+  .hover ul .content:hover .text_p{
+  bottom: -30px;
+  color: #fff;
+  font-size: 12px;
+  }
+  </style>
+  <body>
+  <div class="logo"></div>
+  <div class="hover">
+    <ul>
+      <li class="content"><div class="c_img"><img src="images/1.jpg" alt="" />
+      <div class="text">
+        <h1 class="text_h1">学习就是为了自己的梦想</h1>
+        <p class="text_p">在空白时间所做的事。</p>
+      </div>
+      </div></li>
+        <li class="content">3</li>
+          <li class="content">4</li>
+            <li class="content">1</li>
+    </ul>
+  </div>
+  </body>
+</html>
