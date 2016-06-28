@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>我的商城.html</title>
+
+    <meta http-equiv="keywords" content="博客，商城">
+    <meta http-equiv="description" content="网上商城">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+
+  </head>
+
+
+<script type="text/javascript" src="js/jquery.js">
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$(".ma").click(function(){
+var t=$(this).next(".mb");
+t.slideToggle(500);
+t.siblings(".mb").slideUp("slow");
+});
+
+
+
+
+});
+</script>
+  <body>
+<div id="container">
+  <div id="top">
+
+</div>
+<div id="nav">
+<ul>
+  <li><a href="#">首页</a></li>
+  <li><a href="#">我的博客</a></li>
+  <li><a href="#">我的商城</a></li>
+  <li><a href="#">我的购物车</a></li>
+  <li><a href="#">个人中心</a></li>
+</ul>
+</div>
+<div id="left">
+  <div class="ma">化妆品</div>
+  <ul class="mb">
+  <a href="list.jsp?sid=1" target="wd">         彩妆</a> <br>
+  <a href="list.jsp?sid=2" target="wd">         A妆</a> <br>
+  <a href="list.jsp?sid=3" target="wd">         B妆</a> <br>
+  </ul>
+  <div class="ma">鞋类</div>
+  <ul class="mb">
+  <a href="list.jsp?sid=1" target="wd">         跑鞋</a> <br>
+  <a href="list.jsp?sid=2" target="wd">         皮鞋</a> <br>
+  <a href="list.jsp?sid=3" target="wd">       休闲鞋</a> <br>
+  </ul><div class="ma">服饰类</div>
+  <ul class="mb">
+  <a href="list.jsp?sid=1" target="wd">         男装</a> <br>
+  <a href="list.jsp?sid=2" target="wd">         女装</a> <br>
+  <a href="list.jsp?sid=3" target="wd">         童装</a> <br>
+  </ul>
+</div>
+<div id="mid">
+  <div class="t1">
+    内容
+  </div>
+
+</div>
+<div id="right">
+登录注册
+</div>
+<div id="footer">
+  <span>&copy; 版权所有<span>
+</div>
+</div>
+  </body>
+</html>
