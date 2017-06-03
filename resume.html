@@ -170,7 +170,7 @@
       	-webkit-transform-origin: 0 100%;
       	-moz-transform-origin: 0 100%;
       	transform-origin: 0 100%;
-      	opacity: 0;
+        	opacity: 0;
       	-webkit-transition: all 1s;
       	-moz-transition: all 1s;
       	transition: all 1s;
@@ -202,29 +202,26 @@
 	transform: scale(1);
 	opacity: 1;
 }
-/**4**/
-.md-effect-4 .md-content {
-	-webkit-transform: scale(0) rotate(720deg);
-	-moz-transform: scale(0) rotate(720deg);
-	-ms-transform: scale(0) rotate(720deg);
-	transform: scale(0) rotate(720deg);
+/**11**/
+.md-effect-11 .md-content {
+	-webkit-transform: scale(2);
+	-moz-transform: scale(2);
+	-ms-transform: scale(2);
+	transform: scale(2);
 	opacity: 0;
+	-webkit-transition: all 0.6s;
+	-moz-transition: all 0.6s;
+	transition: all 0.6s;
 }
 
-.md-show.md-effect-4 ~ .md-overlay,
-.md-effect-4 .md-content {
-	-webkit-transition: all 1s;
-	-moz-transition: all 1s;
-	transition: all 1s;
-}
-
-.md-show.md-effect-4 .md-content {
-	-webkit-transform: scale(1) rotate(0deg);
-	-moz-transform: scale(1) rotate(0deg);
-	-ms-transform: scale(1) rotate(0deg);
-	transform: scale(1) rotate(0deg);
+.md-show.md-effect-11 .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
 	opacity: 1;
 }
+
   </style>
   <body>
     <div class="perspective" id="perspective" >
@@ -286,7 +283,7 @@
 				</div>
 			</div>
 		</div>
-    <div class="md-modal md-effect-4" id="modal-4">
+    <div class="md-modal md-effect-11" id="modal-11">
   <div class="md-content">
     <h3>兴趣爱好</h3>
     <div>
@@ -315,25 +312,25 @@
     $("#perspective").removeClass("modalview");
     $("#modal-15").removeClass("md-show");
   $("#modal-1").removeClass("md-show");
-  $("#modal-4").removeClass("md-show");
+  $("#modal-11").removeClass("md-show");
 
   });
     $("#my").click(function(){
     $("#modal-15").addClass("md-show");
     $("#modal-1").removeClass("md-show");
-    $("#modal-4").removeClass("md-show");
+    $("#modal-11").removeClass("md-show");
      return false;
 
  });
  $("#skill").click(function(){
    $("#modal-15").removeClass("md-show");
-      $("#modal-4").removeClass("md-show");
+      $("#modal-11").removeClass("md-show");
  $("#modal-1").addClass("md-show");
  });
  $("#like").click(function(){
    $("#modal-15").removeClass("md-show");
    $("#modal-1").removeClass("md-show");
- $("#modal-4").addClass("md-show");
+ $("#modal-11").addClass("md-show");
  });
 
   </script>
